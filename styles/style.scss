@@ -1,22 +1,36 @@
+$primary: #303146;
+$horizontal-padding: 80px;
+$font-family-headline: 'Cormorant Garamond', serif;
+$font-family-text: 'Roboto', sans-serif;
+$easeOutExpo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-$primary: #303146;
-$horizontal-padding: 80px;
-$font-family-headline: 'Cormorant Garamond', serif;
-$font-family-text: 'Roboto', sans-serif;
+
 
 
 body {
   background-color: #EFF0F2;
 }
 
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 header {
   padding: 0 $horizontal-padding;
-  
   
 
   .flex {
@@ -24,14 +38,21 @@ header {
     height: 20vh;
     justify-content: space-between;
     align-items: center;
-    font-family: $font-family-text;
+
+    .tagLine01 {
+      font-family: $font-family-text;
+      font-size: 14px;
+      color: #8d9095;
+      line-height: 150%;
+
+    }
   }
 }
 
 .mainVisual {
   position: relative;
   padding-left: 25vw;
-  
+  display: hidden;
   
   .heroSection {
     height: 80vh;
@@ -41,7 +62,7 @@ header {
       height: 60vh;
   
       .imageWrap {
-        background: url(https://source.unsplash.com/random);
+        background: url(https://source.unsplash.com/random/1600x900);
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -74,6 +95,9 @@ header {
     .vessel {
       max-width: 700px;
       font-family: $font-family-text;
+      font-size: 14px;
+      color: #8d9095;
+      line-height: 150%;
 
       p {
         margin-bottom: 30px;
@@ -105,23 +129,32 @@ header {
   }
 
   .inner{
-    padding: 100px 0 100px 20vw;
+    padding: 100px 0 0 20vw;
   }
 
   .headerBlock01 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 1100px;
+
+    .ja {
+      margin-left: 10px;
+    }
 
     .headerBlock0102 {
-      max-width: 500px;
+      max-width: 700px;
+      font-family: $font-family-text;
+      font-size: 14px;
+      color: #8d9095;
+      line-height: 150%;
     }
   }
 
   .headMod01 {
     display: flex;
     flex-direction: column;
+    color: #5e6165;
 
     .en {
       font-family: $font-family-headline;
@@ -131,13 +164,26 @@ header {
 
   .projectsSwiper01 {
 
-    padding: 100px 0;
+    padding: 80px 0 0 0;
+
+    .swiperContainer {
+      display: flex;
+      overflow: hidden;
+      // transform: translateX(-20vw);
+      // width: 100vw;
+    }
 
     .swipeCard {
       height: 400px;
       width: 400px;
-      background-color: blue;
-      overflow: hidden;
+      margin: 0 20px;
+      user-select: none;
+
+      &:nth-child(1) {
+        margin-left: 20vw;
+      }
+      
+      
 
       .imageWrapper {
         height: 250px;
@@ -148,6 +194,62 @@ header {
       img {
         width: 100%;
       }
+
+      .head01 {
+        font-size: 26px;
+        margin-top: 30px;
+        font-family: $font-family-text;
+        color: #5e6165;
+      }
+
+      .text01 {
+        margin-top: 20px;
+        font-family: $font-family-text;
+        font-size: 14px;
+        color: #8d9095;
+        line-height: 150%;
+      }
+    }
+  }
+
+}
+
+#experience {
+
+  height: 80vh;
+  background-color: wheat;
+
+  .inner {
+    padding: 100px 0 0 20vw;
+  }
+
+  .headerBlock01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+
+    .ja {
+      margin-left: 10px;
+    }
+
+    .headerBlock0102 {
+      max-width: 700px;
+      font-family: $font-family-text;
+      font-size: 14px;
+      color: #8d9095;
+      line-height: 150%;
+    }
+  }
+
+  .headMod01 {
+    display: flex;
+    flex-direction: column;
+    color: #5e6165;
+
+    .en {
+      font-family: $font-family-headline;
+      font-size: 80px;
     }
   }
 
