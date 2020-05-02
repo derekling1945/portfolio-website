@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary: #303146;
+$horizontal-padding: 80px;
+$font-family-headline: 'Cormorant Garamond', serif;
+$font-family-text: 'Roboto', sans-serif;
+
+
+body {
+  background-color: #EFF0F2;
+}
+
+header {
+  padding: 0 $horizontal-padding;
+  
+  
+
+  .flex {
+    display: flex;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-family-text;
+  }
+}
+
+.mainVisual {
+  position: relative;
+  padding-left: 25vw;
+  
+  
+  .heroSection {
+    height: 80vh;
+
+    .image01 {
+      position: relative;
+      height: 60vh;
+  
+      .imageWrap {
+        background: url(https://source.unsplash.com/random);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+      }
+  
+      .sliderText {
+        position: absolute;
+        width: 800px;
+        bottom: -20%;
+        left: -20%;
+  
+        span {
+          color: white;
+          font-size: 180px;
+          font-family: $font-family-headline;
+          font-weight: 300;
+          line-height: 150px;
+          letter-spacing: -10px;
+        }
+      }
+  
+    }
+
+  }
+  
+  
+  #message {
+    padding: 10vh 0;
+
+    .vessel {
+      max-width: 700px;
+      font-family: $font-family-text;
+
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+#works {
+
+  height: 100vh;
+
+  .vessel {
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: 500px;
+      width: 75vw;
+      background-color: white;
+      z-index: -1;
+    }
+  }
+
+  .inner{
+    padding: 100px 0 100px 20vw;
+  }
+
+  .headerBlock01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+
+    .headerBlock0102 {
+      max-width: 500px;
+    }
+  }
+
+  .headMod01 {
+    display: flex;
+    flex-direction: column;
+
+    .en {
+      font-family: $font-family-headline;
+      font-size: 80px;
+    }
+  }
+
+  .projectsSwiper01 {
+
+    padding: 100px 0;
+
+    .swipeCard {
+      height: 400px;
+      width: 400px;
+      background-color: blue;
+      overflow: hidden;
+
+      .imageWrapper {
+        height: 250px;
+        width: 400px;
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}

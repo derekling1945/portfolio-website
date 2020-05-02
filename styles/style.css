@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #EFF0F2;
+}
+
+header {
+  padding: 0 80px;
+}
+
+header .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainVisual {
+  position: relative;
+  padding-left: 25vw;
+}
+
+.mainVisual .heroSection {
+  height: 80vh;
+}
+
+.mainVisual .heroSection .image01 {
+  position: relative;
+  height: 60vh;
+}
+
+.mainVisual .heroSection .image01 .imageWrap {
+  background: url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.mainVisual .heroSection .image01 .sliderText {
+  position: absolute;
+  width: 800px;
+  bottom: -20%;
+  left: -20%;
+}
+
+.mainVisual .heroSection .image01 .sliderText span {
+  color: white;
+  font-size: 180px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  line-height: 150px;
+  letter-spacing: -10px;
+}
+
+.mainVisual #message {
+  padding: 10vh 0;
+}
+
+.mainVisual #message .vessel {
+  max-width: 700px;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainVisual #message .vessel p {
+  margin-bottom: 30px;
+}
+
+#works {
+  height: 100vh;
+}
+
+#works .vessel {
+  height: 60vh;
+  position: relative;
+  z-index: 1;
+}
+
+#works .vessel:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 75vw;
+  background-color: white;
+  z-index: -1;
+}
+
+#works .inner {
+  padding: 100px 0 100px 20vw;
+}
+
+#works .headerBlock01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+}
+
+#works .headerBlock01 .headerBlock0102 {
+  max-width: 500px;
+}
+
+#works .headMod01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#works .headMod01 .en {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 80px;
+}
+
+#works .projectsSwiper01 {
+  padding: 100px 0;
+}
+
+#works .projectsSwiper01 .swipeCard {
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+  overflow: hidden;
+}
+
+#works .projectsSwiper01 .swipeCard .imageWrapper {
+  height: 250px;
+  width: 400px;
+  overflow: hidden;
+}
+
+#works .projectsSwiper01 .swipeCard img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
