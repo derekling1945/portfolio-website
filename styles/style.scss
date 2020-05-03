@@ -214,10 +214,10 @@ header {
 
 }
 
-#experience {
+section {
 
-  height: 80vh;
-  background-color: wheat;
+  min-height: 600px;
+  // background-color: wheat;
 
   .inner {
     padding: 100px 0 0 20vw;
@@ -234,7 +234,7 @@ header {
     }
 
     .headerBlock0102 {
-      max-width: 700px;
+      max-width: 600px;
       font-family: $font-family-text;
       font-size: 14px;
       color: #8d9095;
@@ -254,3 +254,31 @@ header {
   }
 
 }
+
+.experienceWrapper {
+  margin: 50px 0;
+  width: 100%;
+  height: 600px;
+  background: url(https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1700&q=80);
+  background-position: center;
+  position: relative;
+
+  .overlay {
+    
+    &:before {
+      content: "";
+      position: absolute;
+      height: 600px;
+      width: 100vw;
+      z-index: 2;
+      display: block;
+      top: 0;
+      left: 0;
+      background-color: #5e6165;
+      opacity: 90%;
+    }
+  }
+
+}
+
+
